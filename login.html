@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="loginPage">
+        <img src="profil.jpg" alt="profil">
+        <div id="log">
+            <label for="username">Login</label><br>
+            <input type="text" id="username" placeholder="Nom d'utilisateur" required><br>
+        </div>
+        <div id="pass">
+            <label for="password">Password</label><br>
+            <input type="password" id="password" placeholder="Mot de passe" required><br>
+        </div>
+        <button type="submit" onclick="Login()" id="connect">Sign In</button>
+        <div id="errorMessage"></div>
+    </div>
+    <script src="./js/index.js" ></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/info.css">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="logoutButton">Log out</button>
+    <p id="info_personnel"></p>
+    <div id="xpTotal"></div>
+    <div id="level">Level
+    <div id="grade"></div>
+    </div>
+    <div id="ratio"></div>
+    <div id="graphContainer"></div>
+    <div id="pieContainer"></div>
+    <div id="legende_xp"></div>
+    <div id="legende_ratio"></div>
+<script>
+    document.addEventListener('DOMContentLoaded',function () {
+        const logoutButton = document.getElementById('logoutButton');
+    if(logoutButton){
+        logoutButton.addEventListener('click', function() {
+            localStorage.removeItem('token')
+            window.location.href = 'login.html'; 
+        });
+    }
+    })
+    var legende_xp=document.getElementById('legende_xp')
+    legende_xp.textContent="GRAPH XP earned by project"
+    document.body.appendChild(legende_xp)
+    
+    var legende_ratio=document.getElementById('legende_ratio')
+    legende_ratio.textContent="GRAPH Projects PASS and FAIL ratio"
+    document.body.appendChild(legende_ratio)
+</script>
+    <script src="./js/acceuil.js"></script>
+</body>
+</html>

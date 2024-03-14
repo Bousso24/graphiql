@@ -1,0 +1,63 @@
+body{
+    background-image: url('../acceuil.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+#loginPage{
+    background-color: rgba(191, 195, 195, 0.775);
+    height: 500px;
+    width: 600px;
+    margin-left: auto;
+    margin-top: 6%;
+    margin-right: auto;
+    position: relative;
+    font-size: 26px;
+    padding: 20px;
+    text-align: center;
+}
+
+#loginPage label {
+    margin-bottom: 10px;
+    display: inline-block; 
+}
+
+#loginPage input {
+    font-size: 30px; 
+    padding: 5px; 
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+#loginPage div {
+    margin-bottom: 40px;
+}
+#log{
+    margin-top: 20px;
+}
+#connect{
+    background-color: rgba(191, 195, 195, 0.22);
+    font-size: 30px; 
+    padding: 5px; 
+    margin-bottom: 100px;
+    border-radius: 6px; 
+}
+img{
+    height: 120px;
+    border-radius: 60px;
+}
+
+@media screen and (max-width: 653px) {
+    #loginPage {
+        width: 90%;
+        font-size: 20px; 
+    }
+    
+    #loginPage input {
+        font-size: 15px;
+    }
+    
+    #connect {
+        font-size: 24px; 
+    }
+}

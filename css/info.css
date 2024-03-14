@@ -1,0 +1,111 @@
+body{
+    background-image: url('../acceuil.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+#logoutButton{
+    background-color: rgba(191, 195, 195, 0.22);
+    position: relative;
+    margin-left: 90%;
+    font-size: 30px; 
+    padding: 5px; 
+    margin-bottom: 100px;
+    border-radius: 6px; 
+    margin-right: auto; /* Placer le bouton à gauche en déplaçant le reste de l'espace disponible vers la droite */
+}
+#info_personnel{
+    font-size: 50px; 
+   margin-top: -70px;
+}
+#xpTotal{
+    background-color: rgba(191, 195, 195, 0.22);
+    height: 50px;
+    width: 200px;
+    margin-left: 35%;
+    margin-top: 0.0001%;
+    position: relative;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+#level{
+    background-color: rgba(191, 195, 195, 0.22);
+    height: 100px;
+    width: 100px;
+    margin-right: 50%;
+    margin-left: 25px;
+    margin-top: -7%;
+    position: relative;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(12, 11, 11, 0.1); 
+
+}
+#level div{
+    margin-top: 30px;
+}
+#ratio{
+    background-color: rgba(191, 195, 195, 0.22);
+    height: 50px;
+    width: 200px;
+    margin-left: 75%;
+    margin-top: -5%;
+    position: relative;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+#graphContainer{
+    position: relative;
+    margin-top: 90px;
+}
+.tooltip {
+    position: absolute;
+    color: rgb(5, 5, 5);
+    padding: 5px;
+    height: 40px;
+    width: 150px;
+    margin-top:-400px;
+    margin-left: 200px;
+    font-size: 25px;
+    border-radius: 5px;
+    visibility: hidden;
+    text-align: center ;
+}
+#pieContainer{
+    position: relative;
+    margin-top: -300px;
+    margin-left: 65%;
+}
+.tool{
+    position: absolute;
+    color: rgb(5, 5, 5);
+    padding: 5px;
+    height: 40px;
+    width: 150px;
+    margin-top:-400px;
+    margin-left: 69%;
+    font-size: 25px;
+    border-radius: 5px;
+    visibility: hidden;
+    text-align: center ;
+}
+#legende_xp{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 5%; 
+}
+#legende_xp{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 4%; 
+    font-size: 30px; 
+}
+#legende_ratio{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 60%;
+    font-size: 30px; 
+}

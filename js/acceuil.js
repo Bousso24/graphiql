@@ -137,7 +137,7 @@ const drawBarChart=(data)=> {
             rect.setAttribute("y", svgHeight - rectHeight);
             rect.setAttribute("width", barWidth);
             rect.setAttribute("height", rectHeight);
-            rect.setAttribute("fill", "grey");
+            rect.setAttribute("fill", getRandomColor());
             rect.setAttribute("stroke", "black");
             rect.setAttribute("stroke-width", "2");
 
@@ -149,7 +149,6 @@ const drawBarChart=(data)=> {
                 element = Math.round(element * 0.0001).toFixed(1).toString() + "MB";
             }
 
-            // Ajoutez un événement de survol à chaque barre
             rect.addEventListener("mouseover", () => {
                 tooltip.textContent = `${pp[index]}: ${element}`;
                 tooltip.style.visibility = "visible";
@@ -165,10 +164,19 @@ const drawBarChart=(data)=> {
     tooltip.classList.add("tooltip");
     document.body.appendChild(tooltip);
 
-    // Ajoutez le SVG au conteneur
     graphContainer.appendChild(svg);
-
 }
+
+// Fonction pour générer une couleur aléatoire au format hexadécimal
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
 
 const drawPieChart = (data) => {
     const pieContainer = document.getElementById('pieContainer');
@@ -228,7 +236,6 @@ const drawPieChart = (data) => {
     });
     svg.appendChild(passCircle);
 
-    // Ajoutez le SVG au conteneur du diagramme circulaire
     pieContainer.appendChild(svg);
 
     // Définissez une fonction pour créer un chemin SVG décrivant une section de cercle
@@ -244,19 +251,16 @@ const drawPieChart = (data) => {
         const arcPath = [
             "M", startX, startY,
             "A", radius, radius, 0, largeArcFlag, 1, endX, endY,
-            "L", x, y, // Ligne vers le centre du cercle
-            "Z" // Fermer le chemin
+            "L", x, y, 
+            "Z" 
         ].join(" ");
 
         return arcPath;
     }
-
-    // Créez l'élément tooltip
     const tool = document.createElement("div");
     tool.classList.add("tool");
     document.body.appendChild(tool);
 }
 
-// Appel de la fonction GraphQL
 GraphQL();
 

@@ -95,17 +95,14 @@ body{
 #legende_xp{
     position: absolute;
     margin-top: 20px;
-    margin-left: 5%; 
-}
-#legende_xp{
-    position: absolute;
-    margin-top: 20px;
     margin-left: 4%; 
     font-size: 30px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #legende_ratio{
     position: absolute;
     margin-top: 20px;
     margin-left: 60%;
     font-size: 30px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
